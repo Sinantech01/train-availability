@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0066ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 320px;
+      background-color: white;
+      padding: 20px;
+      margin: 60px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .fare-summary {
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .fare-summary p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .row input {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Payment Page</h2>
+
+    <div class="fare-summary">
+      <p><strong>Train:</strong> Kannur Express</p>
+      <p><strong>From:</strong> Kannur</p>
+      <p><strong>To:</strong> Chennai</p>
+      <p><strong>Fare:</strong> ₹ 850</p>
+    </div>
+
+  
+    <form>
+      <label for="cardnumber">Card Number:</label>
+      <input type="text" id="cardnumber" name="cardnumber" placeholder="Enter card number" >
+
+      <label for="nameoncard">Name on Card:</label>
+      <input type="text" id="nameoncard" name="nameoncard" placeholder="Enter name" >
+
+      <div class="row">
+        <div>
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" >
+        </div>
+        <div>
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" name="cvv" placeholder="***" >
+        </div>
+      </div>
+
+      <a href="train 5.html"><button type="button">Pay ₹850</button></a>
+    </form>
+  </div>
+
+</body>
+</html>
